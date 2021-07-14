@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <img src="/bg.jpg" id="bg">
+        <img src="/moon.png" id="moon">
+        <img src="/mountain.png" id="mountain">
+        <img src="/road.png" id="road">
+        <h2 id="text">Moon Light</h2>
+    </section>
+    <section>
+        <div class="sec">
+            <h2 id="textScroll">Parallax Scrolling Effects</h2>
+            <p id="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, nobis rem? Possimus, autem
+                quidem.
+                Blanditiis, quae. Est perspiciatis repellat iure expedita eos magni maiores? Quia sint nemo blanditiis
+                ducimus. Fugiat ducimus itaque pariatur facilis numquam inventore in aut eius rem. Vitae rerum eius
+                adipisci, accusantium sunt voluptatem atque iste ut distinctio deleniti praesentium illum ducimus quis
+                at
+                dolor, architecto laboriosam recusandae dignissimos velit cupiditate. Pariatur nesciunt consequuntur
+                accusamus dolor neque corrupti quos omnis cumque tenetur fugit optio ut aliquid hic illum, mollitia
+                minus.
+                Possimus magni numquam cupiditate deleniti vitae sunt, dolores itaque ipsa omnis! Ad maxime quod
+                assumenda,
+                fugiat ab iure officiis neque rerum eius! Dicta vero obcaecati iste <br><br> saepe! Deleniti officiis
+                facilis officia dolorum quam suscipit doloribus sequi facere quas expedita accusamus consequuntur
+                molestiae,
+                quidem magni soluta quis, mollitia ea minus sunt tempore delectus vero ex ad qui! Alias accusamus, saepe
+                illo, deserunt fuga aliquid quaerat beatae, labore placeat vitae eaque consectetur. Mollitia porro
+                reiciendis beatae, ratione omnis esse in expedita! Deserunt <br><br> iure cumque ut eos ipsum pariatur
+                consectetur, voluptas architecto quasi, unde quidem placeat dolore provident minima officiis? Velit
+                alias
+                non culpa facere expedita quam dolorem tenetur dolor laudantium repellat quas sint labore, sit eligendi
+                architecto ut excepturi. Modi, dolores optio provident repellat tempore consectetur nostrum voluptas.
+                Dolor
+                eos ipsa tempora magni optio et eligendi quo delectus voluptas amet tenetur nobis doloremque harum
+                labore
+                quos qui consequatur commodi ratione neque error maxime hic, dignissimos perspiciatis quaerat.
+                Perferendis
+                <br><br> laboriosam labore adipisci obcaecati odio possimus, recusandae porro exercitationem ipsum autem
+                inventore voluptas animi iusto libero eveniet, blanditiis quidem eum delectus. Ab eius nesciunt deleniti
+                eveniet quod voluptatem molestias obcaecati harum necessitatibus ducimus nulla quam reprehenderit
+                corporis
+                voluptatum doloribus, vel, culpa officia, sed cupiditate ullam natus quas ratione accusamus! Cumque
+                perspiciatis, veniam reiciendis quae dignissimos accusamus <br><br> similique dolor possimus adipisci!
+                Numquam quidem repudiandae voluptas suscipit placeat, in dolor ex nostrum nobis expedita. Sunt eum
+                nostrum
+                velit voluptatum odio deserunt sed excepturi error soluta unde iure repudiandae tenetur obcaecati
+                repellat
+                eos sequi debitis rerum facilis non, laudantium fugit veritatis, aliquid corporis. Molestias veniam,
+                tempore
+                odit culpa voluptatum dolores cumque soluta unde deleniti nulla nemo officia quia rem dolorum hic
+                reiciendis
+                velit accusantium? Ipsa consectetur repellendus maxime amet dolorem earum facilis rem beatae nihil
+                maiores
+                aspernatur soluta, at natus ullam, reprehenderit similique sint alias non sequi velit magni sapiente,
+                ipsum
+                illo. Distinctio tenetur voluptas omnis molestias magni exercitationem ex ipsa est incidunt officia.
+            </p>
+        </div>
+    </section>
+    <script type="text/javascript">
+        let bg = document.getElementById("bg");
+        let moon = document.getElementById("moon");
+        let mountain = document.getElementById("mountain");
+        let road = document.getElementById("road");
+        let text = document.getElementById("text");
+
+        window.addEventListener('scroll', function () {
+            let value = window.scrollY;
+
+            bg.style.top = value * 0.5 + 'px';
+            moon.style.left = -value * 0.5 + 'px';
+            mountain.style.top = -value * 0.15 + 'px';
+            road.style.top = value * 0.15 + 'px';
+            text.style.top = value * 1 + 'px';
+        })
+    </script>
+</body>
+
+</html>
